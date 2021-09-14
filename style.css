@@ -219,3 +219,165 @@ body {
 
 
 /* End of SEC3 */
+
+
+/* loading style */
+
+.loading {
+    text-align: center;
+    margin: 100px auto 100px auto;
+    background: #111;
+    color: wheat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+}
+
+.loading h1 {
+    position: relative;
+}
+
+.loading span {
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    animation: animspan 5s infinite;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-animation: animspan 5s infinite;
+}
+
+@keyframes animspan {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading span:nth-child(1) {
+    border-radius: 30% 70% 58% 42% / 30% 26% 74% 70%;
+    -webkit-border-radius: 30% 70% 58% 42% / 30% 26% 74% 70%;
+    -moz-border-radius: 30% 70% 58% 42% / 30% 26% 74% 70%;
+    -ms-border-radius: 30% 70% 58% 42% / 30% 26% 74% 70%;
+    -o-border-radius: 30% 70% 58% 42% / 30% 26% 74% 70%;
+    animation-duration: 5s;
+}
+
+.loading span:nth-child(2) {
+    animation-duration: 3s;
+    animation-direction: reverse;
+    border-radius: 67% 33% 58% 42% / 30% 79% 21% 70%;
+    -webkit-border-radius: 67% 33% 58% 42% / 30% 79% 21% 70%;
+    -moz-border-radius: 67% 33% 58% 42% / 30% 79% 21% 70%;
+    -ms-border-radius: 67% 33% 58% 42% / 30% 79% 21% 70%;
+    -o-border-radius: 67% 33% 58% 42% / 30% 79% 21% 70%;
+}
+
+.loading span:nth-child(3) {
+    border-radius: 24% 76% 58% 42% / 59% 17% 83% 41%;
+    -webkit-border-radius: 24% 76% 58% 42% / 59% 17% 83% 41%;
+    -moz-border-radius: 24% 76% 58% 42% / 59% 17% 83% 41%;
+    -ms-border-radius: 24% 76% 58% 42% / 59% 17% 83% 41%;
+    -o-border-radius: 24% 76% 58% 42% / 59% 17% 83% 41%;
+    animation-duration: 4s;
+    animation-direction: reverse;
+}
+
+
+/* End of loading  */
+
+
+/* Sec4 */
+
+.Section4 {
+    width: 100%;
+    min-height: 500px;
+    background: #eee;
+}
+
+.Section4 .flex-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Section4-p {
+    text-align: center;
+    line-height: 50px;
+    margin: 20px;
+    font-size: larger;
+    font-weight: 700;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #686868;
+}
+
+.Section4-box {
+    width: 30%;
+}
+
+.Section4-box img {
+    width: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.Section4-box img:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+.Section4-box .Section4-box-p {
+    text-align: center;
+    line-height: 29px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 700;
+}
+
+.Section4-box .Section4-box-p h4 {}
+
+.Section4-box .Section4-box-p p {
+    color: #686868;
+}
+
+
+/* hover and selction in sec4 */
+
+.Section4-p:hover {
+    text-shadow: 1px 1px red;
+}
+
+.Section4-box .Section4-box-p :hover {
+    text-shadow: 1px 1px gold;
+}
+
+.Section4-box .Section4-box-p p::selection {
+    background-color: black;
+    color: yellow;
+}
+
+.Section4-p h4::selection {
+    /* background-color: black; */
+    color: red;
+}
+
+.Section4-p p::selection {
+    background-color: black;
+    color: red;
+}
+
+
+/* end hover and selction in sec4 */
+
+
+/* End of sec4 */
